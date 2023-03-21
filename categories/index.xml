@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories | Yang Liu&#39; Website</title>
+    <link>https://fdjingliu.github.io/categories/</link>
+      <atom:link href="https://fdjingliu.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <description>Categories</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>https://fdjingliu.github.io/media/icon_hub4a8cfd9b9ede80e1565b341e66849d4_8722_512x512_fill_lanczos_center_3.png</url>
+      <title>Categories</title>
+      <link>https://fdjingliu.github.io/categories/</link>
+    </image>
+    
+  </channel>
+</rss>

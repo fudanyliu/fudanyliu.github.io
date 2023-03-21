@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 | Yang Liu&#39; Website</title>
+    <link>https://fdjingliu.github.io/publication-type/1/</link>
+      <atom:link href="https://fdjingliu.github.io/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
+    <description>1</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 26 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fdjingliu.github.io/media/icon_hub4a8cfd9b9ede80e1565b341e66849d4_8722_512x512_fill_lanczos_center_3.png</url>
+      <title>1</title>
+      <link>https://fdjingliu.github.io/publication-type/1/</link>
+    </image>
+    
+    <item>
+      <title>Learning Appearance-Motion Normality for Video Anomaly Detection</title>
+      <link>https://fdjingliu.github.io/publication/icme22-stmae/</link>
+      <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://fdjingliu.github.io/publication/icme22-stmae/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning Task-Specific Representation for Video Anomaly Detection with Spatial-Temporal Attention</title>
+      <link>https://fdjingliu.github.io/publication/icassp22-sta/</link>
+      <pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://fdjingliu.github.io/publication/icassp22-sta/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
