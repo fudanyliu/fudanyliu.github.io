@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Yang Liu&#39; Website</title>
-    <link>https://fdjingliu.github.io/</link>
-      <atom:link href="https://fdjingliu.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <description>Yang Liu&#39; Website</description>
+    <title>Yang Liu&#39;s Website</title>
+    <link>https://fudanyliu.github.io/</link>
+      <atom:link href="https://fudanyliu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <description>Yang Liu&#39;s Website</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://fdjingliu.github.io/media/icon_hub03b4b5a4868baa5217403a27f6bfa6d_3216_512x512_fill_lanczos_center_3.png</url>
-      <title>Yang Liu&#39; Website</title>
-      <link>https://fdjingliu.github.io/</link>
+      <url>https://fudanyliu.github.io/media/icon_hub03b4b5a4868baa5217403a27f6bfa6d_3216_512x512_fill_lanczos_center_3.png</url>
+      <title>Yang Liu&#39;s Website</title>
+      <link>https://fudanyliu.github.io/</link>
     </image>
     
     <item>
       <title>Example Talk</title>
-      <link>https://fdjingliu.github.io/talk/example-talk/</link>
+      <link>https://fudanyliu.github.io/talk/example-talk/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>https://fdjingliu.github.io/talk/example-talk/</guid>
+      <guid>https://fudanyliu.github.io/talk/example-talk/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
@@ -34,58 +34,58 @@
     
     <item>
       <title>Paper Acceptance</title>
-      <link>https://fdjingliu.github.io/post/new_work/</link>
+      <link>https://fudanyliu.github.io/post/new_work/</link>
       <pubDate>Mon, 20 Mar 2023 17:18:14 +0800</pubDate>
-      <guid>https://fdjingliu.github.io/post/new_work/</guid>
+      <guid>https://fudanyliu.github.io/post/new_work/</guid>
       <description>&lt;p&gt;The paper entitled &lt;em&gt;&amp;ldquo;OSIN: Object-centric Scene Inference Network for Unsupervised Video Anomaly Detection&amp;rdquo;&lt;/em&gt; was accepted to IEEE Signal Processing Letters.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Generalized Video Anomaly Event Detection: Systematic Taxonomy and Comparison of Deep Models</title>
-      <link>https://fdjingliu.github.io/publication/csur23-gvaed/</link>
+      <link>https://fudanyliu.github.io/publication/csur23-gvaed/</link>
       <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://fdjingliu.github.io/publication/csur23-gvaed/</guid>
+      <guid>https://fudanyliu.github.io/publication/csur23-gvaed/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Learning Appearance-Motion Normality for Video Anomaly Detection</title>
-      <link>https://fdjingliu.github.io/publication/icme22-stmae/</link>
+      <link>https://fudanyliu.github.io/publication/icme22-stmae/</link>
       <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://fdjingliu.github.io/publication/icme22-stmae/</guid>
+      <guid>https://fudanyliu.github.io/publication/icme22-stmae/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Appearance-Motion United Auto-Encoder Framework for Video Anomaly Detection</title>
-      <link>https://fdjingliu.github.io/publication/tcasii22-un/</link>
+      <link>https://fudanyliu.github.io/publication/tcasii22-un/</link>
       <pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://fdjingliu.github.io/publication/tcasii22-un/</guid>
+      <guid>https://fudanyliu.github.io/publication/tcasii22-un/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Collaborative Normality Learning Framework for Weakly Supervised Video Anomaly Detection</title>
-      <link>https://fdjingliu.github.io/publication/tcasii22-weak/</link>
+      <link>https://fudanyliu.github.io/publication/tcasii22-weak/</link>
       <pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://fdjingliu.github.io/publication/tcasii22-weak/</guid>
+      <guid>https://fudanyliu.github.io/publication/tcasii22-weak/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Learning Task-Specific Representation for Video Anomaly Detection with Spatial-Temporal Attention</title>
-      <link>https://fdjingliu.github.io/publication/icassp22-sta/</link>
+      <link>https://fudanyliu.github.io/publication/icassp22-sta/</link>
       <pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://fdjingliu.github.io/publication/icassp22-sta/</guid>
+      <guid>https://fudanyliu.github.io/publication/icassp22-sta/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Automated driving with vehicle-road cooperation</title>
-      <link>https://fdjingliu.github.io/research/chongming/</link>
+      <link>https://fudanyliu.github.io/research/chongming/</link>
       <pubDate>Tue, 02 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://fdjingliu.github.io/research/chongming/</guid>
+      <guid>https://fudanyliu.github.io/research/chongming/</guid>
       <description>&lt;p&gt;Our research was conducted on Chongming Smart Island in Shanghai, where we utilized the concept of Vehicle to Everything (V2X) communication for autonomous vehicle experiments. This enables vehicles to receive real-time road and perceptual information, which can help improve road safety, increase operational efficiency, and reduce traffic accidents. The study mainly focuses on various aspects of vehicle-road coordination for autonomous driving, conducting experiments and testing its feasibility.&lt;/p&gt;
 &lt;p&gt;Figure (a) shows our roadside perception integration device. This equipment can be used to collect environmental perception information from roadside, which can improve the safety and intelligence of autonomous vehicles as it provides real-time data on vehicles and pedestrians within a 100-meter range to assist in vehicle perception for surrounding vehicles and pedestrians.&lt;/p&gt;
 &lt;p&gt;Figure (b) describes the autonomous logistics vehicles we used in our experiments. These vehicles can be used for human or cargo transportation within the park, and can operate without human intervention to improve transportation efficiency.&lt;/p&gt;
@@ -96,9 +96,9 @@
     
     <item>
       <title>Changan Project</title>
-      <link>https://fdjingliu.github.io/project/changan/</link>
+      <link>https://fudanyliu.github.io/project/changan/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://fdjingliu.github.io/project/changan/</guid>
+      <guid>https://fudanyliu.github.io/project/changan/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 &lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
 &lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
@@ -109,9 +109,9 @@
     
     <item>
       <title></title>
-      <link>https://fdjingliu.github.io/admin/config.yml</link>
+      <link>https://fudanyliu.github.io/admin/config.yml</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fdjingliu.github.io/admin/config.yml</guid>
+      <guid>https://fudanyliu.github.io/admin/config.yml</guid>
       <description></description>
     </item>
     

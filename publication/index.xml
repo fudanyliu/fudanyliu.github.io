@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications | Yang Liu&#39; Website</title>
-    <link>https://fdjingliu.github.io/publication/</link>
-      <atom:link href="https://fdjingliu.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    <title>Publications | Yang Liu&#39;s Website</title>
+    <link>https://fudanyliu.github.io/publication/</link>
+      <atom:link href="https://fudanyliu.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 10 Feb 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://fdjingliu.github.io/media/icon_hub03b4b5a4868baa5217403a27f6bfa6d_3216_512x512_fill_lanczos_center_3.png</url>
+      <url>https://fudanyliu.github.io/media/icon_hub03b4b5a4868baa5217403a27f6bfa6d_3216_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
-      <link>https://fdjingliu.github.io/publication/</link>
+      <link>https://fudanyliu.github.io/publication/</link>
     </image>
     
     <item>
       <title>Generalized Video Anomaly Event Detection: Systematic Taxonomy and Comparison of Deep Models</title>
-      <link>https://fdjingliu.github.io/publication/csur23-gvaed/</link>
+      <link>https://fudanyliu.github.io/publication/csur23-gvaed/</link>
       <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://fdjingliu.github.io/publication/csur23-gvaed/</guid>
+      <guid>https://fudanyliu.github.io/publication/csur23-gvaed/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Learning Appearance-Motion Normality for Video Anomaly Detection</title>
-      <link>https://fdjingliu.github.io/publication/icme22-stmae/</link>
+      <link>https://fudanyliu.github.io/publication/icme22-stmae/</link>
       <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://fdjingliu.github.io/publication/icme22-stmae/</guid>
+      <guid>https://fudanyliu.github.io/publication/icme22-stmae/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Appearance-Motion United Auto-Encoder Framework for Video Anomaly Detection</title>
-      <link>https://fdjingliu.github.io/publication/tcasii22-un/</link>
+      <link>https://fudanyliu.github.io/publication/tcasii22-un/</link>
       <pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://fdjingliu.github.io/publication/tcasii22-un/</guid>
+      <guid>https://fudanyliu.github.io/publication/tcasii22-un/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Collaborative Normality Learning Framework for Weakly Supervised Video Anomaly Detection</title>
-      <link>https://fdjingliu.github.io/publication/tcasii22-weak/</link>
+      <link>https://fudanyliu.github.io/publication/tcasii22-weak/</link>
       <pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://fdjingliu.github.io/publication/tcasii22-weak/</guid>
+      <guid>https://fudanyliu.github.io/publication/tcasii22-weak/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Learning Task-Specific Representation for Video Anomaly Detection with Spatial-Temporal Attention</title>
-      <link>https://fdjingliu.github.io/publication/icassp22-sta/</link>
+      <link>https://fudanyliu.github.io/publication/icassp22-sta/</link>
       <pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://fdjingliu.github.io/publication/icassp22-sta/</guid>
+      <guid>https://fudanyliu.github.io/publication/icassp22-sta/</guid>
       <description></description>
     </item>
     
