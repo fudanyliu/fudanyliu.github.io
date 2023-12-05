@@ -33,69 +33,69 @@
     </item>
     
     <item>
-      <title>Paper Acceptance</title>
-      <link>https://fudanyliu.github.io/post/pa2-pr/</link>
-      <pubDate>Wed, 05 Apr 2023 17:38:14 +0800</pubDate>
-      <guid>https://fudanyliu.github.io/post/pa2-pr/</guid>
-      <description>&lt;p&gt;Congratulations to Dr. Jing Liu for his paper entitled &lt;em&gt;Distributional and Spatial-Temporal Robust Representation Learning for Transportation Activity Recognition&lt;/em&gt; was accepted to &lt;strong&gt;Pattern Recognition&lt;/strong&gt;. I was listed as the co-first author.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Paper Acceptance</title>
-      <link>https://fudanyliu.github.io/post/pa3-bspc/</link>
-      <pubDate>Wed, 05 Apr 2023 17:18:14 +0800</pubDate>
-      <guid>https://fudanyliu.github.io/post/pa3-bspc/</guid>
-      <description>&lt;p&gt;Congratulations to Dr. Bobo Ju for his paper entitled &lt;em&gt;A Novel Cell Contour Based Instance Segmentation Model and Its Applications in HER2 Breast CancerDiscrimination&lt;/em&gt; was accepted to &lt;strong&gt;Biomedical Signal Processing and Control&lt;/strong&gt;. I was listed as the second author.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Paper Acceptance</title>
-      <link>https://fudanyliu.github.io/post/pa1-spl/</link>
-      <pubDate>Sun, 26 Mar 2023 17:18:14 +0800</pubDate>
-      <guid>https://fudanyliu.github.io/post/pa1-spl/</guid>
-      <description>&lt;p&gt;The paper entitled &lt;em&gt;&amp;ldquo;OSIN: Object-centric Scene Inference Network for Unsupervised Video Anomaly Detection&amp;rdquo;&lt;/em&gt; was accepted to IEEE Signal Processing Letters. I was the first author.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Generalized Video Anomaly Event Detection: Systematic Taxonomy and Comparison of Deep Models</title>
       <link>https://fudanyliu.github.io/publication/csur23-gvaed/</link>
-      <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://fudanyliu.github.io/publication/csur23-gvaed/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Learning Appearance-Motion Normality for Video Anomaly Detection</title>
-      <link>https://fudanyliu.github.io/publication/icme22-stmae/</link>
-      <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://fudanyliu.github.io/publication/icme22-stmae/</guid>
+      <title>Arrival at UofT</title>
+      <link>https://fudanyliu.github.io/post/2311-tout/</link>
+      <pubDate>Wed, 29 Nov 2023 19:18:14 +0800</pubDate>
+      <guid>https://fudanyliu.github.io/post/2311-tout/</guid>
+      <description>&lt;p&gt;I arrived in Toronto and was honored to join the Intelligent Systems Group led by Prof. Igor in the Department of Computer Science, University of Toronto. I look forward to a successful visiting Ph.D. career here and doing some interesting and meaningful work with all of you, wonderful and kind partners!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Oceanwide Scholar</title>
+      <link>https://fudanyliu.github.io/post/2311-fanhai/</link>
+      <pubDate>Wed, 29 Nov 2023 17:18:14 +0800</pubDate>
+      <guid>https://fudanyliu.github.io/post/2311-fanhai/</guid>
+      <description>&lt;p&gt;I was awarded the 2023 Fudan University Oceanwide Scholar (only 10 graduates).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Stochastic Video Normality Network for Abnormal Event Detection in Surveillance Videos</title>
+      <link>https://fudanyliu.github.io/publication/kbs23-svn/</link>
+      <pubDate>Sat, 25 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://fudanyliu.github.io/publication/kbs23-svn/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Appearance-Motion United Auto-Encoder Framework for Video Anomaly Detection</title>
-      <link>https://fudanyliu.github.io/publication/tcasii22-un/</link>
-      <pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://fudanyliu.github.io/publication/tcasii22-un/</guid>
+      <title>Learning Causality-inspired Representation Consistency for Video Anomaly Detection</title>
+      <link>https://fudanyliu.github.io/publication/mm23-crc/</link>
+      <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://fudanyliu.github.io/publication/mm23-crc/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Collaborative Normality Learning Framework for Weakly Supervised Video Anomaly Detection</title>
-      <link>https://fudanyliu.github.io/publication/tcasii22-weak/</link>
-      <pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://fudanyliu.github.io/publication/tcasii22-weak/</guid>
+      <title>National Scholarship</title>
+      <link>https://fudanyliu.github.io/post/2309-natsch/</link>
+      <pubDate>Sun, 01 Oct 2023 17:18:14 +0800</pubDate>
+      <guid>https://fudanyliu.github.io/post/2309-natsch/</guid>
+      <description>&lt;p&gt;I was awarded the 2023 national scholarship for PhD students at Fudan University.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>AMP-Net: Appearance-Motion Prototype Network Assisted Automatic Video Anomaly Detection System</title>
+      <link>https://fudanyliu.github.io/publication/tii23-amp/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://fudanyliu.github.io/publication/tii23-amp/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Learning Task-Specific Representation for Video Anomaly Detection with Spatial-Temporal Attention</title>
-      <link>https://fudanyliu.github.io/publication/icassp22-sta/</link>
-      <pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://fudanyliu.github.io/publication/icassp22-sta/</guid>
+      <title>Distributional and Spatial-Temporal Robust Representation Learning for Transportation Activity Recognition</title>
+      <link>https://fudanyliu.github.io/publication/pr23/</link>
+      <pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://fudanyliu.github.io/publication/pr23/</guid>
       <description></description>
     </item>
     

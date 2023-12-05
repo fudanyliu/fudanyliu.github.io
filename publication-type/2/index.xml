@@ -5,7 +5,7 @@
     <link>https://fudanyliu.github.io/publication-type/2/</link>
       <atom:link href="https://fudanyliu.github.io/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 10 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Dec 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://fudanyliu.github.io/media/icon_hub03b4b5a4868baa5217403a27f6bfa6d_3216_512x512_fill_lanczos_center_3.png</url>
       <title>2</title>
@@ -15,24 +15,32 @@
     <item>
       <title>Generalized Video Anomaly Event Detection: Systematic Taxonomy and Comparison of Deep Models</title>
       <link>https://fudanyliu.github.io/publication/csur23-gvaed/</link>
-      <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://fudanyliu.github.io/publication/csur23-gvaed/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Appearance-Motion United Auto-Encoder Framework for Video Anomaly Detection</title>
-      <link>https://fudanyliu.github.io/publication/tcasii22-un/</link>
-      <pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://fudanyliu.github.io/publication/tcasii22-un/</guid>
+      <title>Stochastic Video Normality Network for Abnormal Event Detection in Surveillance Videos</title>
+      <link>https://fudanyliu.github.io/publication/kbs23-svn/</link>
+      <pubDate>Sat, 25 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://fudanyliu.github.io/publication/kbs23-svn/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Collaborative Normality Learning Framework for Weakly Supervised Video Anomaly Detection</title>
-      <link>https://fudanyliu.github.io/publication/tcasii22-weak/</link>
-      <pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://fudanyliu.github.io/publication/tcasii22-weak/</guid>
+      <title>AMP-Net: Appearance-Motion Prototype Network Assisted Automatic Video Anomaly Detection System</title>
+      <link>https://fudanyliu.github.io/publication/tii23-amp/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://fudanyliu.github.io/publication/tii23-amp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Distributional and Spatial-Temporal Robust Representation Learning for Transportation Activity Recognition</title>
+      <link>https://fudanyliu.github.io/publication/pr23/</link>
+      <pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://fudanyliu.github.io/publication/pr23/</guid>
       <description></description>
     </item>
     
