@@ -5,12 +5,21 @@
     <link>https://fudanyliu.github.io/post/</link>
       <atom:link href="https://fudanyliu.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 29 Nov 2023 19:18:14 +0800</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Aug 2024 19:18:14 +0800</lastBuildDate>
     <image>
       <url>https://fudanyliu.github.io/media/icon_hub03b4b5a4868baa5217403a27f6bfa6d_3216_512x512_fill_lanczos_center_3.png</url>
       <title>Posts</title>
       <link>https://fudanyliu.github.io/post/</link>
     </image>
+    
+    <item>
+      <title>Co-organizer of OEL-IIoT Workshop</title>
+      <link>https://fudanyliu.github.io/post/2408-oel/</link>
+      <pubDate>Thu, 01 Aug 2024 19:18:14 +0800</pubDate>
+      <guid>https://fudanyliu.github.io/post/2408-oel/</guid>
+      <description>&lt;p&gt;I will be co-organizer of &amp;ldquo;&lt;a href=&#34;https://sites.google.com/view/oel-workshop/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Online Evolutive Learning in Intelligent Internet of Things&lt;/a&gt;&amp;rdquo; workshop at the &lt;a href=&#34;https://wfiot2024.iot.ieee.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;10th IEEE World Forum on Internet of Things&lt;/a&gt; with Prof. Song, Prof. &lt;a href=&#34;https://www.ece.utoronto.ca/people/plataniotis-k-n/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Plataniotis&lt;/a&gt;, Prof. &lt;a href=&#34;https://ece.ubc.ca/victor-leung/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Victor C.M. Leung&lt;/a&gt; and Prof. &lt;a href=&#34;https://www.cs.sfu.ca/~jcliu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Liu&lt;/a&gt;, focusing on the convergence of online evolutionary learning and the smart Internet.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Arrival at UofT</title>
