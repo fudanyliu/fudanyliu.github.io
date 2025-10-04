@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Dr. Yang Liu | Academic Background & Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-navy: #1a2332;
+            --secondary-gold: #d4af37;
+            --accent-blue: #4a90e2;
+            --text-charcoal: #2c3e50;
+            --bg-white: #ffffff;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-charcoal);
+            background: var(--bg-white);
+        }
+        
+        .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--secondary-gold);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .education-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(74, 144, 226, 0.05) 100%);
+            border-left: 4px solid var(--secondary-gold);
+            transition: all 0.3s ease;
+        }
+        
+        .education-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 15px 35px rgba(26, 35, 50, 0.1);
+        }
+        
+        .award-card {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(255, 255, 255, 0.95) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .award-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(26, 35, 50, 0.1);
+            border-color: var(--secondary-gold);
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .stagger-item {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        .service-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(74, 144, 226, 0.05) 100%);
+            border: 1px solid rgba(74, 144, 226, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(26, 35, 50, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="font-display text-2xl font-bold text-gray-800">
+                    Yang Liu （刘洋）
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-gray-900 font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-gray-700 hover:text-gray-900 font-medium">About</a>
+                    <a href="research.html" class="nav-link text-gray-700 hover:text-gray-900 font-medium">Research</a>
+                    <a href="publications.html" class="nav-link text-gray-700 hover:text-gray-900 font-medium">Publications</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <h1 class="font-display text-5xl font-bold text-gray-900 mb-6">About Me</h1>
+                    <p class="text-xl text-gray-600 leading-relaxed mb-8">
+                        I am an Assistant Professor at Tongji University, specializing in artificial intelligence and multimodal signal processing. My research focuses on developing 
+                        innovative AI solutions for smart industry and autonomous driving applications.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        With a academic background from Fudan University and 
+                        University of Toronto, I am passionate about advancing the frontiers of AI research 
+                        while ensuring practical real-world impact.
+                    </p>
+                </div>
+                <div class="fade-in">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="font-display text-2xl font-semibold mb-6 text-center">Quick Facts</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Current Position:</span>
+                                <span class="font-semibold">Assistant Professor</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Institution:</span>
+                                <span class="font-semibold">Tongji University</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Research Areas:</span>
+                                <span class="font-semibold">Artificial Intelligence</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Location:</span>
+                                <span class="font-semibold">Shanghai, China</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Email:</span>
+                                <span class="font-semibold text-blue-600">yang_liu@ieee.org</span>
+                            </div>
+                            <!-- <div class="flex justify-between">
+                                <span class="text-gray-600">LinkedIn:</span>
+                                <span class="font-semibold text-blue-600">yang-liu-39b708216</span>
+                            </div> -->
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">WeChat ID:</span>
+                                <span class="font-semibold">yangliuiioi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold text-gray-900 mb-4 fade-in">Education</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto fade-in">
+                    Comprehensive academic training from leading institutions
+                </p>
+            </div>
+            
+            <div class="space-y-8">
+                <div class="education-card p-8 rounded-xl stagger-item">
+                    <div class="grid md:grid-cols-4 gap-6 items-center">
+                        <div class="md:col-span-1">
+                            <div class="text-2xl font-bold text-blue-600">2023-2025</div>
+                            <div class="text-gray-500">Toronto, Canada</div>
+                        </div>
+                        <div class="md:col-span-3">
+                            <h3 class="font-display text-2xl font-semibold mb-2">PhD in Artificial Intelligence (Joint Program)</h3>
+                            <p class="text-blue-600 font-semibold mb-3">University of Toronto, Department of Computer Science</p>
+                            <p class="text-gray-600 mb-4">
+                                Joint PhD program focusing on multimodal large language models. 
+                                Conducted research at Vector Institute, collaborating 
+                                with Prof. Azzedine Boukerche (FCAE, FIEEE) and Victor C.M. Leung (FCAE, FRSC, LFIEEE).
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Computer Vision</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Multimodal AI</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Vector Institute</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-card p-8 rounded-xl stagger-item">
+                    <div class="grid md:grid-cols-4 gap-6 items-center">
+                        <div class="md:col-span-1">
+                            <div class="text-2xl font-bold text-green-600">2020-2025</div>
+                            <div class="text-gray-500">Shanghai, China</div>
+                        </div>
+                        <div class="md:col-span-3">
+                            <h3 class="font-display text-2xl font-semibold mb-2">PhD in Computer Application Technology</h3>
+                            <p class="text-green-600 font-semibold mb-3">Fudan University, Academy for Engineering & Technology</p>
+                            <p class="text-gray-600 mb-4">
+                                Direct PhD program (recommended without examination) under the supervision of 
+                                Prof. Song Liang (FCAE). Research focused on anomaly detection, environmental 
+                                perception, and multimedia analysis. GPA: 3.5/4.0
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Anomaly Detection</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Environmental Perception</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Multimedia Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-card p-8 rounded-xl stagger-item">
+                    <div class="grid md:grid-cols-4 gap-6 items-center">
+                        <div class="md:col-span-1">
+                            <div class="text-2xl font-bold text-purple-600">2016-2020</div>
+                            <div class="text-gray-500">Nanjing, China</div>
+                        </div>
+                        <div class="md:col-span-3">
+                            <h3 class="font-display text-2xl font-semibold mb-2">Bachelor in Automation</h3>
+                            <p class="text-purple-600 font-semibold mb-3">Nanjing University, School of Engineering Management</p>
+                            <p class="text-gray-600 mb-4">
+                                Undergraduate degree in Automation with outstanding academic performance. 
+                                GPA: 4.5/5.0, Average Score: 91/100. Participated in international exchange 
+                                program at University of British Columbia (2019).
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Automation</span>
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Control Systems</span>
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">UBC Exchange</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards and Honors -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold text-gray-900 mb-4 fade-in">Awards & Honors</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto fade-in">
+                    Recognition for academic excellence and research contributions
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="award-card p-6 rounded-xl stagger-item">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">National Scholarship (Ph.D.)</h3>
+                    <p class="text-gray-600 text-sm mb-2">MoE of PRC (Top 1%)</p>
+                    <p class="text-gray-500 text-sm">2022</p>
+                </div>
+                
+                <div class="award-card p-6 rounded-xl stagger-item">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">IEEE ISHC'21 Best Student Paper</h3>
+                    <p class="text-gray-600 text-sm mb-2">IEEE ISHC'21 Technical Committee (Top 0.5%)</p>
+                    <p class="text-gray-500 text-sm">2021</p>
+                </div>
+                
+                <div class="award-card p-6 rounded-xl stagger-item">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">INSAI'24 Best Student Paper</h3>
+                    <p class="text-gray-600 text-sm mb-2">INSAI'24 Technical Committee (Top 0.5%)</p>
+                    <p class="text-gray-500 text-sm">2024</p>
+                </div>
+                
+                <div class="award-card p-6 rounded-xl stagger-item">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">National Scholarship for Study Abroad</h3>
+                    <p class="text-gray-600 text-sm mb-2">China Scholarship Council</p>
+                    <p class="text-gray-500 text-sm">2023</p>
+                </div>
+                
+                <div class="award-card p-6 rounded-xl stagger-item">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Oceanwide Scholar Award</h3>
+                    <p class="text-gray-600 text-sm mb-2">China Oceanwide Holdings Group & Fudan University (10 recipients/year)</p>
+                    <p class="text-gray-500 text-sm">2023</p>
+                </div>
+                
+                <div class="award-card p-6 rounded-xl stagger-item">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Baosteel Excellent Student Award</h3>
+                    <p class="text-gray-600 text-sm mb-2"> Baosteel Education Fund (Special Grade, Top 10 nationwide)</p>
+                    <p class="text-gray-500 text-sm">2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Service -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold text-gray-900 mb-4 fade-in">Professional Service</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto fade-in">
+                    Continuous Contribution to the academic community!
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="service-card p-8 rounded-xl stagger-item">
+                    <h3 class="font-display text-2xl font-semibold mb-6"> Editorial & Organization Activities </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-2 h-2 bg-purple-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                            <div>
+                                <p class="font-semibold">Editor</p>
+                                <p class="text-gray-600 text-sm">Guest Editor for IEEE TCSS and Young Editorial Board Member for AIAS</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                            <div>
+                                <p class="font-semibold">Special Session Chair </p>
+                                <p class="text-gray-600 text-sm">Organizing special session at IEEE ICASSP 26, WF-IoT 2025, etc.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-2 h-2 bg-green-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                            <div>
+                                <p class="font-semibold">Tutorial/Workshop Co-organizer</p>
+                                <p class="text-gray-600 text-sm">Organizing Tutorial and Workshops at PRCV 2025, IEEE ICIP 2025, etc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card p-8 rounded-xl stagger-item">
+                    <h3 class="font-display text-2xl font-semibold mb-6">Peer Review Activities</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-2 h-2 bg-red-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                            <div>
+                                <p class="font-semibold">Journal Reviewer</p>
+                                <p class="text-gray-600 text-sm">Reviewer for IEEE TPAMI, TIP, TNNLS, TII, TITS, TMM, TCSVT, ACM  CSUR</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-2 h-2 bg-yellow-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                            <div>
+                                <p class="font-semibold">Conference Reviewer</p>
+                                <p class="text-gray-600 text-sm">Reviewer for NeurIPS, CVPR, ICLR, ECCV, AAAI, ICCV, ACM MM, ICASSP </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-2 h-2 bg-indigo-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                            <div>
+                                <p class="font-semibold">Area Chairs</p>
+                                <p class="text-gray-600 text-sm">AC for IEEE ICIP, BMVC, etc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-8">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p>&copy; 2025 Dr. Yang Liu. All rights reserved. | Assistant Professor, Tongji University</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

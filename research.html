@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Dr. Yang Liu | AI & Computer Vision</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-navy: #1a2332;
+            --secondary-gold: #d4af37;
+            --accent-blue: #4a90e2;
+            --text-charcoal: #2c3e50;
+            --bg-white: #ffffff;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-charcoal);
+            background: var(--bg-white);
+        }
+        
+        .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--secondary-gold);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .research-area-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(74, 144, 226, 0.05) 100%);
+            border-left: 4px solid var(--secondary-gold);
+            transition: all 0.3s ease;
+        }
+        
+        .research-area-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 15px 35px rgba(26, 35, 50, 0.1);
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--secondary-gold);
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px var(--secondary-gold);
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 1.5rem;
+            width: 2px;
+            height: calc(100% - 1rem);
+            background: linear-gradient(to bottom, var(--secondary-gold), transparent);
+        }
+        
+        .timeline-item:last-child::after {
+            display: none;
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .stagger-item {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        .project-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(212, 175, 55, 0.05) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(26, 35, 50, 0.15);
+            border-color: var(--secondary-gold);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="font-display text-2xl font-bold text-gray-800">
+                    Yang Liu （刘洋）
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-gray-900 font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-gray-700 hover:text-gray-900 font-medium">About</a>
+                    <a href="research.html" class="nav-link text-gray-700 hover:text-gray-900 font-medium">Research</a>
+                    <a href="publications.html" class="nav-link text-gray-700 hover:text-gray-900 font-medium">Publications</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h1 class="font-display text-5xl font-bold text-gray-900 mb-6 fade-in">Research</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto fade-in">
+                    Advancing the frontiers of artificial intelligence through innovative research and real-world applications for smart industry and autonomous systems.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Areas -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold text-gray-900 mb-4 fade-in">Research Areas</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto fade-in">
+                    My research spans multiple interconnected domains, focusing on practical applications 
+                    and theoretical foundations of artificial intelligence.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="research-area-card p-8 rounded-xl stagger-item">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-2xl font-semibold mb-4">Environmental Perception & Anomaly Detection</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Developing advanced algorithms for visual perception and anomaly detection in complex industrial 
+                        environments. My work focuses on appearance-motion prototype networks and memory-augmented 
+                        spatiotemporal encoding frameworks that can identify unusual patterns in real-time applications.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Environmental Perception</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Anomaly Detection</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Video Analysis</span>
+                    </div>
+                </div>
+                
+                <div class="research-area-card p-8 rounded-xl stagger-item">
+                    <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-2xl font-semibold mb-4">Multimodal AI & Large Language Models</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Creating efficient multimodal architectures that integrate visual, textual, and sensor data 
+                        for comprehensive understanding. Specializing in resource-constrained deployments and 
+                        knowledge distillation techniques for practical industrial applications.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Multimodal Fusion</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">LLMs</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Knowledge Distillation</span>
+                    </div>
+                </div>
+                
+                <div class="research-area-card p-8 rounded-xl stagger-item">
+                    <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 7.172V5L8 4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-2xl font-semibold mb-4">Smart Industry & Industrial IoT</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Applying AI-driven solutions to industrial automation, quality control, and predictive maintenance. 
+                        My research includes online evolutionary learning algorithms and distributed computing frameworks 
+                        for enhanced industrial efficiency and safety.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Industrial AI</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">IoT Systems</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Predictive Maintenance</span>
+                    </div>
+                </div>
+                
+                <div class="research-area-card p-8 rounded-xl stagger-item">
+                    <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-2xl font-semibold mb-4">Autonomous Driving & Safety</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Enhancing autonomous vehicle perception and safety through multimodal sensor fusion and 
+                        robust scene understanding algorithms. Research focuses on adverse weather conditions and 
+                        complex urban environments where traditional systems face challenges.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Autonomous Vehicles</span>
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Sensor Fusion</span>
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Safety Systems</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Projects
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold text-gray-900 mb-4 fade-in">Current Projects</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto fade-in">
+                    Active research projects funded by national grants and industry collaborations
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card p-8 rounded-xl stagger-item">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Active</span>
+                        <span class="text-gray-500 text-sm">2024-2027</span>
+                    </div>
+                    <h3 class="font-display text-xl font-semibold mb-3">Foundation Models for Industrial Anomaly Detection</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Developing foundation model-based approaches for anomaly detection in smart manufacturing 
+                        environments, with focus on few-shot learning and domain adaptation.
+                    </p>
+                    <div class="text-sm text-gray-500 mb-4">Funding: National Natural Science Foundation</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Foundation Models</span>
+                        <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Anomaly Detection</span>
+                    </div>
+                </div>
+                
+                <div class="project-card p-8 rounded-xl stagger-item">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Active</span>
+                        <span class="text-gray-500 text-sm">2025-2028</span>
+                    </div>
+                    <h3 class="font-display text-xl font-semibold mb-3">Multimodal LLMs for Autonomous Driving</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Creating efficient multimodal large language models specifically designed for autonomous 
+                        driving applications in resource-constrained embedded systems.
+                    </p>
+                    <div class="text-sm text-gray-500 mb-4">Funding: Ministry of Science and Technology</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Multimodal AI</span>
+                        <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Autonomous Driving</span>
+                    </div>
+                </div>
+                
+                <div class="project-card p-8 rounded-xl stagger-item">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Active</span>
+                        <span class="text-gray-500 text-sm">2024-2026</span>
+                    </div>
+                    <h3 class="font-display text-xl font-semibold mb-3">Online Evolutionary Learning for IIoT</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Advanced online learning algorithms for Industrial Internet of Things applications, 
+                        focusing on adaptive model updates and continuous learning in dynamic environments.
+                    </p>
+                    <div class="text-sm text-gray-500 mb-4">Funding: Industry Collaboration</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Online Learning</span>
+                        <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">IIoT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Research Timeline -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold text-gray-900 mb-4 fade-in">Research Timeline</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto fade-in">
+                    Key milestones in my academic and research journey
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-12">
+                    <div class="timeline-item stagger-item">
+                        <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-display text-2xl font-semibold text-gray-900">Assistant Professor</h3>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">2025 - Present</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Joined Tongji University as Assistant Professor in the Department of Electronic and Information Engineering. 
+                                Leading research in AI environment perception algorithms for smart industry and autonomous driving applications.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Tongji University</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">AI Research</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item stagger-item">
+                        <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-display text-2xl font-semibold text-gray-900">Research Assistant</h3>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">2023 - 2025</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Research Assistant at Duke Kunshan University, working on anomaly detection algorithms 
+                                for dynamic environments. Developed appearance-motion prototype networks and contributed 
+                                to IEEE TII publications.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Duke Kunshan</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Anomaly Detection</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item stagger-item">
+                        <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-display text-2xl font-semibold text-gray-900">Visiting Scholar</h3>
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">2023 - 2025</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Visiting Scholar at University of Toronto and Vector Institute, working with Geoffrey Hinton's team. 
+                                Focused on multimodal large models and resource-constrained AI applications.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">University of Toronto</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Vector Institute</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Multimodal AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item stagger-item">
+                        <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-display text-2xl font-semibold text-gray-900">PhD in Computer Science</h3>
+                                <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium">2020 - 2025</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                PhD in Computer Application Technology at Fudan University under the supervision of 
+                                Academician Song Liang. Research focused on anomaly detection, environmental perception, 
+                                and multimedia analysis.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Fudan University</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Computer Vision</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">PhD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-8">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p>&copy; 2025 Dr. Yang Liu. All rights reserved. | Assistant Professor, Tongji University</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

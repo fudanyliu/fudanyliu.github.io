@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Dr. Yang Liu | Research Papers & Articles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-navy: #1a2332;
+            --secondary-gold: #d4af37;
+            --accent-blue: #4a90e2;
+            --text-charcoal: #2c3e50;
+            --bg-white: #ffffff;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-charcoal);
+            background: var(--bg-white);
+        }
+        
+        .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--secondary-gold);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .publication-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(74, 144, 226, 0.02) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .publication-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(26, 35, 50, 0.1);
+            border-color: var(--secondary-gold);
+        }
+        
+        .filter-btn {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .filter-btn.active {
+            background: var(--secondary-gold);
+            color: white;
+            border-color: var(--secondary-gold);
+        }
+        
+        .filter-btn:hover {
+            border-color: var(--secondary-gold);
+            color: var(--secondary-gold);
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .stagger-item {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        .venue-tag {
+            background: linear-gradient(135deg, var(--accent-blue), var(--primary-navy));
+            color: white;
+        }
+        
+        .citation-badge {
+            background: linear-gradient(135deg, var(--secondary-gold), #b8941f);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="font-display text-2xl font-bold text-gray-800">
+                    Yang Liu （刘洋）
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-gray-900 font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-gray-700 hover:text-gray-900 font-medium">About</a>
+                    <a href="research.html" class="nav-link text-gray-700 hover:text-gray-900 font-medium">Research</a>
+                    <a href="publications.html" class="nav-link text-gray-700 hover:text-gray-900 font-medium">Publications</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h1 class="font-display text-5xl font-bold text-gray-900 mb-6 fade-in">Publications</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto fade-in">
+                    Peer-reviewed research papers in top-tier journals and conferences.
+                </p>
+            </div>
+            
+            <!-- Publication Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+                <div class="text-center stagger-item">
+                    <div class="text-4xl font-bold text-blue-600 mb-2" id="total-pubs">40+</div>
+                    <div class="text-gray-600">Total Publications</div>
+                </div>
+                <div class="text-center stagger-item">
+                    <div class="text-4xl font-bold text-green-600 mb-2" id="journal-pubs">20+</div>
+                    <div class="text-gray-600">Journal Papers</div>
+                </div>
+                <div class="text-center stagger-item">
+                    <div class="text-4xl font-bold text-purple-600 mb-2" id="conf-pubs">20+</div>
+                    <div class="text-gray-600">Conference Papers</div>
+                </div>
+                <div class="text-center stagger-item">
+                    <div class="text-4xl font-bold text-red-600 mb-2" id="total-citations">1700+</div>
+                    <div class="text-gray-600">Citations</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="py-8 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-wrap gap-4 justify-center">
+                <button class="filter-btn active px-6 py-3 rounded-full font-semibold" data-filter="all">
+                    All Publications
+                </button>
+                <button class="filter-btn px-6 py-3 rounded-full font-semibold" data-filter="journal">
+                    Journals
+                </button>
+                <button class="filter-btn px-6 py-3 rounded-full font-semibold" data-filter="conference">
+                    Conferences
+                </button>
+                <button class="filter-btn px-6 py-3 rounded-full font-semibold" data-filter="recent">
+                    Recent (2024-2025)
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Grid -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div id="publications-grid" class="grid gap-8">
+                
+                <!-- Publication 1 -->
+                <div class="publication-card p-8 rounded-xl stagger-item" data-category="journal recent">
+                    <div class="flex flex-wrap items-start justify-between mb-4">
+                        <div class="flex flex-wrap gap-2 mb-2">
+                            <span class="venue-tag px-3 py-1 rounded-full text-sm font-medium">IEEE TIP</span>
+                            <span class="citation-badge px-3 py-1 rounded-full text-sm font-medium">2025</span>
+                        </div>
+                        <div class="text-gray-500 text-sm">2025</div>
+                    </div>
+                    <h3 class="font-display text-2xl font-semibold mb-4 text-gray-900">
+                        CRCL: Causal Representation Consistency Learning for Anomaly Detection in Surveillance Videos
+                    </h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        A novel causal representation consistency learning framework for anomaly detection in surveillance videos. 
+                        The method leverages causal inference principles to improve robustness and generalization across different 
+                         scenarios while maintaining real-time performance.
+                    </p>
+                    <div class="flex flex-wrap items-center justify-between">
+                        <div class="text-sm text-gray-500 mb-2 md:mb-0">
+                            <strong>Yang Liu</strong>, Hongjin Wang, Zepu Wang, Xiaoguang Zhu, Jing Liu, Peng Sun, Rui Tang, Jianwei Du, Victor Leung, Liang Song
+                        </div>
+                        <div class="flex space-x-4">
+                            <button class="text-blue-600 hover:text-blue-800 font-medium">View Paper</button>
+                            <button class="text-green-600 hover:text-green-800 font-medium">Cite</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 2 -->
+                <div class="publication-card p-8 rounded-xl stagger-item" data-category="journal recent">
+                    <div class="flex flex-wrap items-start justify-between mb-4">
+                        <div class="flex flex-wrap gap-2 mb-2">
+                            <span class="venue-tag px-3 py-1 rounded-full text-sm font-medium">IEEE TIE</span>
+                            <span class="citation-badge px-3 py-1 rounded-full text-sm font-medium">2025</span>
+                        </div>
+                        <div class="text-gray-500 text-sm">2025</div>
+                    </div>
+                    <h3 class="font-display text-2xl font-semibold mb-4 text-gray-900">
+                        Improving Robotic Grasp Detection Under Sparse Annotations via Grasp Transformer with Pixel-wise Contrastive Learning
+                    </h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        A novel grasp transformer architecture with pixel-wise contrastive learning for improving robotic grasp detection 
+                        under sparse annotations. The method significantly enhances grasp detection accuracy while reducing annotation requirements.
+                    </p>
+                    <div class="flex flex-wrap items-center justify-between">
+                        <div class="text-sm text-gray-500 mb-2 md:mb-0">
+                            Siao Liu*, <strong>Yang Liu*</strong> (Equal Contribution), Zhaoyu Chen, Ziqing Zhou, Zhile Zhao, Yi Xie, Wei Li, Zhongxue Gan
+                        </div>
+                        <div class="flex space-x-4">
+                            <button class="text-blue-600 hover:text-blue-800 font-medium">View Paper</button>
+                            <button class="text-green-600 hover:text-green-800 font-medium">Cite</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 3 -->
+                <div class="publication-card p-8 rounded-xl stagger-item" data-category="journal recent">
+                    <div class="flex flex-wrap items-start justify-between mb-4">
+                        <div class="flex flex-wrap gap-2 mb-2">
+                            <span class="venue-tag px-3 py-1 rounded-full text-sm font-medium">IEEE TNNLS</span>
+                            <span class="citation-badge px-3 py-1 rounded-full text-sm font-medium">2025</span>
+                        </div>
+                        <div class="text-gray-500 text-sm">2025</div>
+                    </div>
+                    <h3 class="font-display text-2xl font-semibold mb-4 text-gray-900">
+                        Privacy-preserving video anomaly detection: A survey
+                    </h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        A comprehensive survey of privacy-preserving techniques for video anomaly detection. The paper covers 
+                        federated learning, differential privacy, and homomorphic encryption approaches while maintaining 
+                        detection accuracy and real-time performance.
+                    </p>
+                    <div class="flex flex-wrap items-center justify-between">
+                        <div class="text-sm text-gray-500 mb-2 md:mb-0">
+                            <strong>Yang Liu</strong>, Siao Liu, Xiaoguang Zhu, Jielin Li, Hao Yang, Liangyu Teng, Juncen Guo, Yan Wang, Dingkang Yang, Jing Liu
+                        </div>
+                        <div class="flex space-x-4">
+                            <button class="text-blue-600 hover:text-blue-800 font-medium">View Paper</button>
+                            <button class="text-green-600 hover:text-green-800 font-medium">Cite</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 4 -->
+                <div class="publication-card p-8 rounded-xl stagger-item" data-category="journal">
+                    <div class="flex flex-wrap items-start justify-between mb-4">
+                        <div class="flex flex-wrap gap-2 mb-2">
+                            <span class="venue-tag px-3 py-1 rounded-full text-sm font-medium">IEEE TII</span>
+                            <span class="citation-badge px-3 py-1 rounded-full text-sm font-medium">2023</span>
+                        </div>
+                        <div class="text-gray-500 text-sm">2023</div>
+                    </div>
+                    <h3 class="font-display text-2xl font-semibold mb-4 text-gray-900">
+                        AMP-Net: Appearance-Motion Prototype Network Assisted Automatic Video Anomaly Detection System
+                    </h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        A novel appearance-motion prototype network for automatic video anomaly detection in industrial systems. 
+                        The framework combines appearance and motion features through prototype learning to achieve superior 
+                        anomaly detection performance in real-world industrial scenarios.
+                    </p>
+                    <div class="flex flex-wrap items-center justify-between">
+                        <div class="text-sm text-gray-500 mb-2 md:mb-0">
+                            <strong>Yang Liu</strong>, Jing Liu, Kun Yang, Bobo Ju, Siao Liu, Yuzheng Wang, Dingkang Yang, Peng Sun, Liang Song
+                        </div>
+                        <div class="flex space-x-4">
+                            <button class="text-blue-600 hover:text-blue-800 font-medium">View Paper</button>
+                            <button class="text-green-600 hover:text-green-800 font-medium">Cite</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 5 -->
+                <div class="publication-card p-8 rounded-xl stagger-item" data-category="conference">
+                    <div class="flex flex-wrap items-start justify-between mb-4">
+                        <div class="flex flex-wrap gap-2 mb-2">
+                            <span class="venue-tag px-3 py-1 rounded-full text-sm font-medium">ACM MM 2023</span>
+                            <span class="citation-badge px-3 py-1 rounded-full text-sm font-medium">2023</span>
+                        </div>
+                        <div class="text-gray-500 text-sm">2023</div>
+                    </div>
+                    <h3 class="font-display text-2xl font-semibold mb-4 text-gray-900">
+                        Learning Causality-inspired Representation Consistency for Video Anomaly Detection
+                    </h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        A novel causality-inspired representation consistency learning framework for video anomaly detection. 
+                        The method leverages causal inference principles to learn consistent representations that are robust 
+                        to spurious correlations and domain shifts.
+                    </p>
+                    <div class="flex flex-wrap items-center justify-between">
+                        <div class="text-sm text-gray-500 mb-2 md:mb-0">
+                            <strong>Yang Liu</strong>, Zhaoyang Xia, Mengyang Zhao, Donglai Wei, Yuzheng Wang, Siao Liu, Bobo Ju, Gaoyun Fang, Jing Liu, Liang Song
+                        </div>
+                        <div class="flex space-x-4">
+                            <button class="text-blue-600 hover:text-blue-800 font-medium">View Paper</button>
+                            <button class="text-green-600 hover:text-green-800 font-medium">Cite</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 6 -->
+                <div class="publication-card p-8 rounded-xl stagger-item" data-category="journal">
+                    <div class="flex flex-wrap items-start justify-between mb-4">
+                        <div class="flex flex-wrap gap-2 mb-2">
+                            <span class="venue-tag px-3 py-1 rounded-full text-sm font-medium">Pattern Recognition</span>
+                            <span class="citation-badge px-3 py-1 rounded-full text-sm font-medium">2023</span>
+                        </div>
+                        <div class="text-gray-500 text-sm">2023</div>
+                    </div>
+                    <h3 class="font-display text-2xl font-semibold mb-4 text-gray-900">
+                        Distributional and spatial-temporal robust representation learning for transportation activity recognition
+                    </h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        A robust representation learning framework for transportation activity recognition that addresses 
+                        distributional and spatial-temporal variations. The method improves recognition accuracy across 
+                        different transportation modes and environmental conditions.
+                    </p>
+                    <div class="flex flex-wrap items-center justify-between">
+                        <div class="text-sm text-gray-500 mb-2 md:mb-0">
+                            Jing Liu*, <strong>Yang Liu*</strong> (Equal Contribution), Wei Zhu, Xiaoguang Zhu, Liang Song
+                        </div>
+                        <div class="flex space-x-4">
+                            <button class="text-blue-600 hover:text-blue-800 font-medium">View Paper</button>
+                            <button class="text-green-600 hover:text-green-800 font-medium">Cite</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Citation Metrics -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold text-gray-900 mb-4 fade-in">Citation Metrics</h2>
+                <p class="text-xl text-gray-600 fade-in">Research impact and academic recognition over time</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-white p-8 rounded-xl shadow-lg fade-in">
+                    <h3 class="font-display text-2xl font-semibold mb-6 text-center">Citations by Year</h3>
+                    <div id="citations-chart" style="height: 300px;"></div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg fade-in">
+                    <h3 class="font-display text-2xl font-semibold mb-6 text-center">Publication Venues</h3>
+                    <div id="venues-chart" style="height: 300px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-8">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p>&copy; 2025 Dr. Yang Liu. All rights reserved. | Assistant Professor, Tongji University</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
